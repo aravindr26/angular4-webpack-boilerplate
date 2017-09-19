@@ -1,6 +1,6 @@
 # Angular4 app with module lazy loading
 
-[![Angular4 Module lazy load](https://img.shields.io/badge/Reactive%20Form%20Builder-Under_Development-yellow.svg)]
+[![Angular4 Module lazy load](https://img.shields.io/badge/Angular4%20Module%20lazyload-Under_Development-yellow.svg)]
 
 ## Development server
 
