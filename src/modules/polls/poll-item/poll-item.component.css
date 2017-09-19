@@ -1,0 +1,21 @@
+.poll-item-container {
+    margin-top: 50px;
+}
+.poll-item {
+    margin: 0 auto;
+}
+.poll-item-options {
+    margin: 20px auto 0;
+
+}
+.poll-options {
+    margin-top: 10px;
+}
+
+.poll-cta {
+    margin-top: 20px;
+}
+
+.poll-question {
+    font-size: 18px;
+}

@@ -1,0 +1,133 @@
+{
+  "userData": [
+    {
+      "name": "Aravind",
+      "email": "aravind@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "safsdf",
+      "email": "sfsa",
+      "id": 2
+    },
+    {
+      "name": "safsdf",
+      "email": "sfsa",
+      "id": 3
+    }
+  ],
+  "admin": {
+    "username": "admin",
+    "password": "admin"
+  },
+  "polls": [
+    {
+      "id": 1,
+      "category": "Animals",
+      "question": "What type of animal is a natterjack?",
+      "options": [
+        "Bird",
+        "Fish",
+        "Toad",
+        "Insect"
+      ],
+      "answer": "Toad"
+    },
+    {
+      "id": 2,
+      "category": "Entertainment",
+      "question": "What is the name of the virus that infected New York in Tom Clancy's The Division?",
+      "options": [
+        "Dollar Flu",
+        "Ebola",
+        "Red Poison",
+        "Smallpox"
+      ],
+      "answer": "Dollar Flu"
+    },
+    {
+      "id": 3,
+      "category": "History",
+      "question": "America's Strategic Defense System during the Cold War was nicknamed after this famous movie.",
+      "options": [
+        "Jaws",
+        "Star Wars",
+        "Blade Runner",
+        "Alien"
+      ],
+      "answer": "Star Wars"
+    },
+    {
+      "id": 4,
+      "category": "History",
+      "question": "On what day did Germany invade Poland?",
+      "options": [
+        "September 1, 1939",
+        "December 7, 1941",
+        "June 22, 1941",
+        "July 7, 1937"
+      ],
+      "answer": "September 1, 1939"
+    },
+    {
+      "id": 5,
+      "category": "Science",
+      "question": "Which of the following languages is used as a scripting language in the Unity 3D game engine?",
+      "options": [
+        "Java",
+        "C++",
+        "Objective-C",
+        "C#"
+      ],
+      "answer": "C#"
+    },
+    {
+      "id": 6,
+      "category": "General Knowledge",
+      "question": "Which of the following languages is used as a scripting language in the Unity 3D game engine?",
+      "options": [
+        "Java",
+        "C++",
+        "Objective-C",
+        "C#"
+      ],
+      "answer": "C#"
+    },
+    {
+      "id": 7,
+      "category": "Celebrities",
+      "question": "Which When was Elvis Presley born?",
+      "options": [
+        "December 13, 1931",
+        "January 8, 1935",
+        "July 18, 1940",
+        "April 17, 1938"
+      ],
+      "answer": "January 8, 1935"
+    },
+    {
+      "id": 8,
+      "category": "General Knowledge",
+      "question": "When was Nintendo founded?",
+      "options": [
+        "October 19th, 1891",
+        "March 4th, 1887",
+        "September 23rd, 1889",
+        "December 27th, 1894"
+      ],
+      "answer": "September 23rd, 1889"
+    },
+    {
+      "id": 9,
+      "category": "Music",
+      "question": "Which song in Drake&#039;s &quot;Views&quot; features Future?",
+      "options": [
+        "Grammys",
+        "Too Good",
+        "Faithful",
+        "Pop Style"
+      ],
+      "answer": "Grammys"
+    }
+  ]
+}

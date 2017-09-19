@@ -1,3 +1,38 @@
-<div>
-    polls
+<div class="container poll-item-container">
+    <div class="row">
+        <div class="col-6 poll-item poll-question">
+            {{ getPollQuestion() }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 poll-item-options">
+            <div class="input-group poll-options">
+                <span class="input-group-addon">
+                    <input type="radio" name="options" aria-label="Radio button for following text input">
+                </span>
+                <input type="text" disabled class="form-control" value="{{ getPollOption(0) }}" aria-label="Text input with radio button">
+            </div>
+            <div class="input-group poll-options">
+                <span class="input-group-addon">
+                    <input type="radio" name="options" aria-label="Radio button for following text input">
+                </span>
+                <input type="text" disabled class="form-control" value="{{ getPollOption(1) }}" aria-label="Text input with radio button">
+            </div>
+            <div class="input-group poll-options">
+                <span class="input-group-addon">
+                    <input type="radio" name="options" aria-label="Radio button for following text input">
+                </span>
+                <input type="text" disabled class="form-control" value="{{ getPollOption(2) }}"aria-label="Text input with radio button">
+            </div>
+            <div class="input-group poll-options">
+                <span class="input-group-addon">
+                    <input type="radio" name="options" aria-label="Radio button for following text input">
+                </span>
+                <input type="text" disabled class="form-control" value="{{ getPollOption(3) }}"aria-label="Text input with radio button">
+            </div>
+            <div class="poll-cta">
+                <button type="button" class="btn btn-outline-dark" (click)="nextPoll()">Next</button>
+            </div>
+        </div>
+    </div>
 </div>

@@ -1,1 +1,29 @@
-<div>Admin login</div>
+<div class="container admin-loginbox">
+    <div class="row align-items-center app-admin-login-label">
+        <div class="col">
+            Login Here!
+        </div>
+    </div>
+    <div class="row admin-login-fields">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">@</span>
+                <input type="text" class="form-control" #username placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">@</span>
+                <input type="password" class="form-control" #password placeholder="password" aria-label="Password" aria-describedby="basic-addon2">
+            </div>
+        </div>
+    </div>
+
+    <div class="row admin-login-cta">
+        <div class="col-4"></div>
+        <div class="col-4 admin-login-button">
+            <button type="button" (click)="adminLogin(username.value, password.value)" class="btn btn-lg btn-outline-dark">Login</button>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>

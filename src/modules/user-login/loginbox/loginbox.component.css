@@ -1,0 +1,19 @@
+.login-container {
+  text-align: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 50px 10px;
+}
+
+.user-login-cta {
+  margin-top:25px;
+}
+
+.app-user-loginbox {
+  margin-top: 20px;
+}
+
+.app-user-login-label {
+  font-size: 22px;
+  font-weight: bold;
+}

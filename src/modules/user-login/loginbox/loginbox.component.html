@@ -1,3 +1,26 @@
-<div>
-    Login Box
+<div class="container login-container">
+  <div class="row align-items-center app-user-login-label">
+      <div class="col">
+            Let's mark your voice !!
+      </div>
+  </div>
+  <div class="row align-items-center app-user-loginbox">
+    <div class="col-lg-6">
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">@</span>
+            <input type="text" class="form-control" #name placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="input-group">
+            <input type="email" class="form-control" #email placeholder="Email" aria-label="email" aria-describedby="basic-addon2">
+            <span class="input-group-addon" id="basic-addon2">@example.com</span>
+        </div>
+    </div>
+  </div>
+  <div class="row align-items-center user-login-cta">
+      <div class="col align-items-center">
+        <button type="button" (click)="submitUserDetails(name.value, email.value)" class="btn btn-outline-dark">Start</button>            
+      </div>
+  </div>
 </div>

@@ -1,0 +1,25 @@
+.admin-loginbox {
+    margin-top: 50px;
+}
+
+.admin-login-password {
+    margin-top: 15px;
+}
+
+.admin-login-cta {
+    margin-top: 20px;
+}
+
+.admin-login-button {
+    padding: 0 150px;
+}
+
+.app-admin-login-label {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.admin-login-fields {
+    margin-top:15px;
+}
