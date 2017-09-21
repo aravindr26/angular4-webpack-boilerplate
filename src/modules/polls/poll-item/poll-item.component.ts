@@ -20,6 +20,10 @@ export class PollItemComponent implements OnInit {
     private polls: Polls;
     private pollIndex: number;
     public pollLength: number;
+    public poll: String = '';
+    public selectedOption: String = '';
+    private totalPoint = 0;
+    private buttonText: String = 'Next';
 
     ngOnInit() {
         this.pollsService.getPollList()
@@ -34,8 +38,31 @@ export class PollItemComponent implements OnInit {
     }
 
     nextPoll() {
-        if (this.pollIndex < (this.pollLength - 1)) {
-            this.pollIndex++;
+        if (this.buttonText === 'Next') {
+            if (this.selectedOption === this.polls[this.pollIndex].answer) {
+                this.totalPoint += 5;
+            }
+            console.log('total--point---', this.totalPoint);
+            if (this.pollIndex < (this.pollLength - 1)) {
+                this.pollIndex++;
+                this.selectedOption = '';
+            }
+            if (this.pollIndex === (this.pollLength - 1)) {
+                this.buttonText = 'Submit';
+            }
+        } else if (this.buttonText === 'Submit') {
+            alert('You have successfully completed the test');
+            const scoreData = {
+                name: 'Name',
+                score: this.totalPoint
+            };
+            this.pollsService.submitScore(scoreData)
+            .subscribe(
+                data => {
+
+                },
+                error => this.errorMessage = error
+            );
         }
     }
 
@@ -49,5 +76,9 @@ export class PollItemComponent implements OnInit {
         if (this.polls) {
             return this.polls[this.pollIndex].question;
         }
+    }
+
+    onSelection(selectedOption) {
+        this.selectedOption = selectedOption;
     }
 }

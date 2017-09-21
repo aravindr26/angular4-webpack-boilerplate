@@ -8,6 +8,9 @@ import 'rxjs/add/operator/map';
 export class PollsService {
     constructor(private http: Http) {}
 
+    public headers = new Headers({ 'Content-Type': 'application/json' });
+    public options = new RequestOptions({ headers: this.headers });
+
     private extractdata(res: Response) {
         const body = res.json();
         return body || {};
@@ -21,6 +24,12 @@ export class PollsService {
 
     getPollList() {
         return this.http.get('http://localhost:3000/polls')
+        .map(this.extractdata)
+        .catch(this.handleError);
+    }
+
+    submitScore (data) {
+        return this.http.post('http://localhost:3000/saveResult', data, this.options)
         .map(this.extractdata)
         .catch(this.handleError);
     }

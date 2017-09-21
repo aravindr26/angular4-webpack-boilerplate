@@ -10,12 +10,14 @@ export class LoginComponent {
     private error: String = '';
     constructor(private loginservice: LoginService) {}
     submitUserDetails(name, email) {
-        this.loginservice.saveUserDetails({name: name, email: email})
-        .subscribe(
-            data => {
-                console.log(data);
-            },
-            error => this.error = error
-        );
+        if (name !== '' || email !== '') {
+            this.loginservice.saveUserDetails({name: name, email: email})
+            .subscribe(
+                data => {
+                    console.log(data);
+                },
+                error => this.error = error
+            );
+        }
     }
 }

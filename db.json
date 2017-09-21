@@ -14,12 +14,23 @@
       "name": "safsdf",
       "email": "sfsa",
       "id": 3
+    },
+    {
+      "name": "Aravind",
+      "email": "R",
+      "id": 4
+    },
+    {
+      "name": "Sabna",
+      "email": "sabna@gmail.com",
+      "id": 5
     }
   ],
   "admin": {
     "username": "admin",
     "password": "admin"
   },
+  "saveResult": [],
   "polls": [
     {
       "id": 1,

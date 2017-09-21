@@ -8,30 +8,31 @@
         <div class="col-6 poll-item-options">
             <div class="input-group poll-options">
                 <span class="input-group-addon">
-                    <input type="radio" name="options" aria-label="Radio button for following text input">
+                    <input type="radio" name="poll" value="{{ getPollOption(0) }}" (change)="onSelection(getPollOption(0))" aria-label="Radio button for following text input">
                 </span>
                 <input type="text" disabled class="form-control" value="{{ getPollOption(0) }}" aria-label="Text input with radio button">
             </div>
             <div class="input-group poll-options">
                 <span class="input-group-addon">
-                    <input type="radio" name="options" aria-label="Radio button for following text input">
+                    <input type="radio" name="poll" value="{{ getPollOption(1) }}" (change)="onSelection(getPollOption(1))" aria-label="Radio button for following text input">
                 </span>
                 <input type="text" disabled class="form-control" value="{{ getPollOption(1) }}" aria-label="Text input with radio button">
             </div>
             <div class="input-group poll-options">
                 <span class="input-group-addon">
-                    <input type="radio" name="options" aria-label="Radio button for following text input">
+                    <input type="radio" name="poll" value="{{ getPollOption(2) }}" (change)="onSelection(getPollOption(2))" aria-label="Radio button for following text input">
                 </span>
-                <input type="text" disabled class="form-control" value="{{ getPollOption(2) }}"aria-label="Text input with radio button">
+                <input type="text" disabled class="form-control" value="{{ getPollOption(2) }}" aria-label="Text input with radio button">
             </div>
             <div class="input-group poll-options">
                 <span class="input-group-addon">
-                    <input type="radio" name="options" aria-label="Radio button for following text input">
+                    <input type="radio" name="poll" value="{{ getPollOption(3) }}" (change)="onSelection(getPollOption(3))" aria-label="Radio button for following text input">
                 </span>
-                <input type="text" disabled class="form-control" value="{{ getPollOption(3) }}"aria-label="Text input with radio button">
+                <input type="text" disabled class="form-control" value="{{ getPollOption(3) }}" aria-label="Text input with radio button">
             </div>
             <div class="poll-cta">
-                <button type="button" class="btn btn-outline-dark" (click)="nextPoll()">Next</button>
+                {{poll}}
+                <button type="button" class="btn btn-outline-dark" (click)="nextPoll()">{{ buttonText }}</button>
             </div>
         </div>
     </div>
